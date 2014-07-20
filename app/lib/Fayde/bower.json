@@ -1,0 +1,15 @@
+{
+    "name": "Fayde",
+    "version": "0.9.9",
+    "homepage": "http://fayde.wsick.com",
+    "authors": [
+        "BSick7 <brad.sickles@gmail.com>"
+    ],
+    "ignore": [
+        "Demos",
+        "Packages",
+        "Source",
+        "ThirdParty",
+        "Tools"
+    ]
+}

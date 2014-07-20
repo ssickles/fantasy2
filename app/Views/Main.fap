@@ -1,0 +1,25 @@
+<Application xmlns="http://schemas.wsick.com/fayde"
+             xmlns:x="http://schemas.wsick.com/fayde/x"
+             xmlns:vms="ViewModels" Theme="Metro">
+    <Application.Resources>
+    </Application.Resources>
+    <Grid x:Name="LayoutRoot">
+        <Grid.DataContext>
+            <vms:MainViewModel/>
+        </Grid.DataContext>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="1" Text="Mystical Marauders Fantasy Baseball"></TextBlock>
+        <Frame Grid.Row="1" Grid.Column="1" x:Name="ContentFrame">
+            <Frame.UriMapper>
+                <UriMapping Uri="" MappedUri="Views/Home.fap"></UriMapping>
+            </Frame.UriMapper>
+        </Frame>
+    </Grid>
+</Application>

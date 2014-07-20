@@ -1,0 +1,24 @@
+{
+  "name": "Fayde",
+  "version": "0.9.9",
+  "homepage": "http://fayde.wsick.com",
+  "authors": [
+    "BSick7 <brad.sickles@gmail.com>"
+  ],
+  "ignore": [
+    "Demos",
+    "Packages",
+    "Source",
+    "ThirdParty",
+    "Tools"
+  ],
+  "_release": "0.9.9",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.9.9",
+    "commit": "a5bfb11c1592c50b1d96a36e0b68952202f109c3"
+  },
+  "_source": "git://github.com/BSick7/Fayde.git",
+  "_target": "*",
+  "_originalSource": "git://github.com/BSick7/Fayde.git"
+}

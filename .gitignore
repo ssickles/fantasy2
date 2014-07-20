@@ -1,0 +1,4 @@
+node_modules
+.idea/
+app/ViewModels/*.js
+app/ViewModels/*.map
