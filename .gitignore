@@ -1,4 +1,9 @@
 node_modules
 .idea/
+app/lib
 app/ViewModels/*.js
 app/ViewModels/*.map
+app/Models/*.js
+app/Models/*.map
+app/Services/*.js
+app/Services/*.map

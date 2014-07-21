@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title></title>
+    <title>Mystical Marauders Fantasy Baseball</title>
     <script data-config="true">
         var require = {
             baseUrl: "./",
             paths: {
                 "text": "lib/requirejs-text/text",
-                "Fayde": "lib/Fayde/Fayde"
+                "Fayde": "lib/Fayde/Fayde",
+                "lodash": "lib/lodash/dist/lodash"
             },
-            deps: ["text", "Fayde"],
+            deps: ["text", "Fayde", "lodash"],
             callback: function (text, Fayde) {
                 Fayde.Run();
             },
@@ -37,6 +38,6 @@
         }
     </style>
 </head>
-<body faydeapp="Views/Main.fap">
+<body faydeapp="default.fap">
 </body>
 </html>

@@ -15,10 +15,21 @@
             <ColumnDefinition Width="150"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <TextBlock Grid.Row="0" Grid.Column="1" Text="Mystical Marauders Fantasy Baseball"></TextBlock>
+        <Grid Grid.Row="0" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Row="0" Grid.Column="0" Text="Mystical Marauders Fantasy Baseball"></TextBlock>
+            <HyperlinkButton Grid.Row="0" Grid.Column="1" NavigateUri="/About" TargetName="ContentFrame" Content="About"/>
+        </Grid>
         <Frame Grid.Row="1" Grid.Column="1" x:Name="ContentFrame">
             <Frame.UriMapper>
-                <UriMapping Uri="" MappedUri="Views/Home.fap"></UriMapping>
+                <UriMapper>
+                    <UriMapping Uri="" MappedUri="Views/Home.fayde"></UriMapping>
+                    <UriMapping Uri="/{pageName}" MappedUri="Views/{pageName}.fayde"></UriMapping>
+                </UriMapper>
             </Frame.UriMapper>
         </Frame>
     </Grid>

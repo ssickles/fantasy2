@@ -1,9 +1,10 @@
 {
-    "name": "fantasy",
-    "version": "0.1.0",
-    "dependencies": {
-        "requirejs": "*",
-        "requirejs-text": "*",
-        "Fayde": "git://github.com/BSick7/Fayde.git"
-    }
+  "name": "fantasy",
+  "version": "0.1.0",
+  "dependencies": {
+    "requirejs": "*",
+    "requirejs-text": "*",
+    "Fayde": "git://github.com/BSick7/Fayde.git",
+    "lodash": "~2.4.1"
+  }
 }
