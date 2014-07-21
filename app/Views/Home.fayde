@@ -4,5 +4,11 @@
     <Page.DataContext>
         <vms:HomeViewModel/>
     </Page.DataContext>
-    <TextBlock Text="Standings"></TextBlock>
+    <ListBox ItemsSource="{Binding FantasyTeams}">
+        <ListBox.ItemTemplate>
+            <DataTemplate>
+                <TextBlock FontSize="12" Foreground="White" FontWeight="Bold" Margin="5, 0, 0, 0" Padding="3" Text="{Binding Name}" Style="{StaticResource TextShadow}"/>
+            </DataTemplate>
+        </ListBox.ItemTemplate>
+    </ListBox>
 </Page>

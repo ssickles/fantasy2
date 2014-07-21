@@ -2,6 +2,13 @@
              xmlns:x="http://schemas.wsick.com/fayde/x"
              xmlns:vms="ViewModels" Theme="Metro">
     <Application.Resources>
+        <Style x:Name="TextShadow" TargetType="TextBlock">
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect Color="Black" BlurRadius="1" ShadowDepth="1"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
     </Application.Resources>
     <Grid x:Name="LayoutRoot">
         <Grid.DataContext>
