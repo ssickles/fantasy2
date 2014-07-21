@@ -1,4 +1,4 @@
-/// <reference path="../lib/lodash/dist/lodash.d.ts" />
+/// <reference path="../../typings/lodash/lodash.d.ts" />
 import FantasyTeam = require("../Models/FantasyTeam");
 
 class DemoDataProvider {
