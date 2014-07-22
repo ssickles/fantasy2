@@ -1,0 +1,8 @@
+<Page xmlns="http://schemas.wsick.com/fayde"
+      xmlns:x="http://schemas.wsick.com/fayde/x"
+      xmlns:vms="ViewModels">
+    <Page.DataContext>
+        <vms:FantasyTeamViewModel/>
+    </Page.DataContext>
+    <TextBlock Text="FantasyTeam"/>
+</Page>

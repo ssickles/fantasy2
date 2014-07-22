@@ -1,7 +1,9 @@
 class FantasyTeam {
+    Id: number;
     Name: string;
 
-    constructor(name: string) {
+    constructor(id: number, name: string) {
+        this.Id = id;
         this.Name = name;
     }
 }

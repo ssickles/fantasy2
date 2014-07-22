@@ -5,7 +5,7 @@
         <Style x:Name="TextShadow" TargetType="TextBlock">
             <Setter Property="Effect">
                 <Setter.Value>
-                    <DropShadowEffect Color="Black" BlurRadius="1" ShadowDepth="1"/>
+                    <DropShadowEffect Color="Gray" BlurRadius="1" ShadowDepth="1"/>
                 </Setter.Value>
             </Setter>
         </Style>
@@ -35,6 +35,7 @@
             <Frame.UriMapper>
                 <UriMapper>
                     <UriMapping Uri="" MappedUri="Views/Home.fayde"></UriMapping>
+                    <UriMapping Uri="/FantasyTeam/{id}" MappedUri="Views/FantasyTeam.fayde?id={id}"></UriMapping>
                     <UriMapping Uri="/{pageName}" MappedUri="Views/{pageName}.fayde"></UriMapping>
                 </UriMapper>
             </Frame.UriMapper>
