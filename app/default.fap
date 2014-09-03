@@ -32,13 +32,16 @@
             <HyperlinkButton Grid.Row="0" Grid.Column="1" NavigateUri="/About" TargetName="ContentFrame" Content="About"/>
         </Grid>
         <Frame Grid.Row="1" Grid.Column="1" x:Name="ContentFrame">
-            <Frame.UriMapper>
-                <UriMapper>
-                    <UriMapping Uri="" MappedUri="Views/Home.fayde"></UriMapping>
-                    <UriMapping Uri="/FantasyTeam/{id}" MappedUri="Views/FantasyTeam.fayde?id={id}"></UriMapping>
-                    <UriMapping Uri="/{pageName}" MappedUri="Views/{pageName}.fayde"></UriMapping>
-                </UriMapper>
-            </Frame.UriMapper>
+            <Frame.RouteMapper>
+                <RouteMapper>
+                    <RouteMapper.ViewModelProvider>
+                        <vms:ViewModelProvider/>
+                    </RouteMapper.ViewModelProvider>
+                    <RouteMapping Uri="" View="Views/Home.fayde"></RouteMapping>
+                    <RouteMapping Uri="/FantasyTeam/{id}" View="Views/FantasyTeam.fayde"></RouteMapping>
+                    <RouteMapping Uri="/About" View="Views/About.fayde"></RouteMapping>
+                </RouteMapper>
+            </Frame.RouteMapper>
         </Frame>
     </Grid>
 </Application>

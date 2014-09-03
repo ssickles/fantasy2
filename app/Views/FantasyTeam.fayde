@@ -4,5 +4,12 @@
     <Page.DataContext>
         <vms:FantasyTeamViewModel/>
     </Page.DataContext>
-    <TextBlock Text="FantasyTeam"/>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Text="{Binding TeamId}"/>
+        <TextBlock Grid.Row="1" Text="{Binding Team.Name}"/>
+    </Grid>
 </Page>

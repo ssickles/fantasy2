@@ -1,4 +1,5 @@
 /// <reference path="../lib/Fayde/Fayde.d.ts" />
+
 import FantasyTeam = require("../Models/FantasyTeam");
 import DemoDataProvider = require("../Services/DemoDataProvider");
 
