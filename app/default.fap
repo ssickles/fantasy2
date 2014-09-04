@@ -22,26 +22,28 @@
             <ColumnDefinition Width="150"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
+        <HyperlinkButton Grid.Row="0" Grid.Column="0" NavigateUri="" TargetName="ContentFrame" Content="Mystical Marauders"></HyperlinkButton>
         <Grid Grid.Row="0" Grid.Column="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
-            <TextBlock Grid.Row="0" Grid.Column="0" Text="Mystical Marauders Fantasy Baseball"></TextBlock>
             <HyperlinkButton Grid.Row="0" Grid.Column="1" NavigateUri="/About" TargetName="ContentFrame" Content="About"/>
         </Grid>
-        <Frame Grid.Row="1" Grid.Column="1" x:Name="ContentFrame">
-            <Frame.RouteMapper>
-                <RouteMapper>
-                    <RouteMapper.ViewModelProvider>
-                        <vms:ViewModelProvider/>
-                    </RouteMapper.ViewModelProvider>
-                    <RouteMapping Uri="" View="Views/Home.fayde"></RouteMapping>
-                    <RouteMapping Uri="/FantasyTeam/{id}" View="Views/FantasyTeam.fayde"></RouteMapping>
-                    <RouteMapping Uri="/About" View="Views/About.fayde"></RouteMapping>
-                </RouteMapper>
-            </Frame.RouteMapper>
-        </Frame>
+        <ScrollViewer Grid.Row="1" Grid.Column="1">
+            <Frame x:Name="ContentFrame">
+                <Frame.RouteMapper>
+                    <RouteMapper>
+                        <RouteMapper.ViewModelProvider>
+                            <vms:ViewModelProvider/>
+                        </RouteMapper.ViewModelProvider>
+                        <RouteMapping Uri="" View="Views/Home.fayde"></RouteMapping>
+                        <RouteMapping Uri="/FantasyTeam/{id}" View="Views/FantasyTeam.fayde"></RouteMapping>
+                        <RouteMapping Uri="/About" View="Views/About.fayde"></RouteMapping>
+                    </RouteMapper>
+                </Frame.RouteMapper>
+            </Frame>
+        </ScrollViewer>
     </Grid>
 </Application>

@@ -6,10 +6,25 @@
     </Page.DataContext>
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
-        <TextBlock Grid.Row="0" Text="{Binding TeamId}"/>
-        <TextBlock Grid.Row="1" Text="{Binding Team.Name}"/>
+        <TextBlock Grid.Row="0" Text="{Binding Team.Name}"/>
+        <ListBox ItemsSource="{Binding Players}" BorderThickness="0" Padding="0">
+            <ListBox.ItemContainerStyle>
+                <Style TargetType="ListBoxItem">
+                    <Setter Property="Padding" Value="0"/>
+                    <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                </Style>
+            </ListBox.ItemContainerStyle>
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock FontSize="12" Margin="5, 0, 0, 0" Padding="3" Text="{Binding Id}"/>
+                        <TextBlock Grid.Column="1" VerticalAlignment="Center" FontSize="12" Padding="3" Text="{Binding Name}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
     </Grid>
 </Page>
